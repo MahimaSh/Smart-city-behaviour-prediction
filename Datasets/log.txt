@@ -1,0 +1,1323 @@
+----------------------------------------------------------------
+* learning the markov blanket of cloud_cover .
+  * checking node sunshine for inclusion.
+    > node sunshine included in the markov blanket ( p-value: 1.674553e-160 ).
+    > markov blanket ( 1 nodes ) now is ' sunshine '.
+    > restarting grow loop.
+  * checking node global_radiation for inclusion.
+    > cloud_cover indep. global_radiation given ' sunshine ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > cloud_cover indep. max_temp given ' sunshine ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > cloud_cover indep. mean_temp given ' sunshine ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > cloud_cover indep. min_temp given ' sunshine ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > cloud_cover indep. precipitation given ' sunshine ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > cloud_cover indep. pressure given ' sunshine ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > cloud_cover indep. snow_depth given ' sunshine ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > cloud_cover indep. Number of Bicycle Hires given ' sunshine ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > cloud_cover indep. CO given ' sunshine ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > cloud_cover indep. NO given ' sunshine ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > cloud_cover indep. NO2 given ' sunshine ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > cloud_cover indep. O3 given ' sunshine ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > cloud_cover indep. PM10 given ' sunshine ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > cloud_cover indep. SO2 given ' sunshine ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > cloud_cover indep. Bus journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > cloud_cover indep. Underground journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > cloud_cover indep. DLR Journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > cloud_cover indep. Tram Journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > cloud_cover indep. Overground Journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > cloud_cover indep. London Cable Car Journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > cloud_cover indep. TfL Rail Journeys (m) given ' sunshine ' ( p-value: 1 ).
+  * checking node sunshine for exclusion (shrinking phase).
+    > node sunshine remains in the markov blanket. ( p-value: 1.674553e-160 )
+----------------------------------------------------------------
+* learning the markov blanket of sunshine .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 1.674553e-160 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node global_radiation for inclusion.
+    > sunshine indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > sunshine indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > sunshine indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > sunshine indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > sunshine indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > sunshine indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > sunshine indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > sunshine indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > sunshine indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > sunshine indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > sunshine indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > sunshine indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > sunshine indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > sunshine indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > sunshine indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > sunshine indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > sunshine indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > sunshine indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > sunshine indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > sunshine indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > sunshine indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 1.674553e-160 )
+----------------------------------------------------------------
+* learning the markov blanket of global_radiation .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 2.21196e-09 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > global_radiation indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > global_radiation indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > global_radiation indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > global_radiation indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > global_radiation indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > global_radiation indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > global_radiation indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > global_radiation indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > global_radiation indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > global_radiation indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > global_radiation indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > global_radiation indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > global_radiation indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > global_radiation indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > global_radiation indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > global_radiation indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > global_radiation indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > global_radiation indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > global_radiation indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > global_radiation indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > global_radiation indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 2.21196e-09 )
+----------------------------------------------------------------
+* learning the markov blanket of max_temp .
+  * checking node cloud_cover for inclusion.
+    > max_temp indep. cloud_cover given '  ' ( p-value: 0.9843505 ).
+  * checking node sunshine for inclusion.
+    > max_temp indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > max_temp indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > max_temp indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > max_temp indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > max_temp indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > max_temp indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > max_temp indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > max_temp indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > max_temp indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > max_temp indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > max_temp indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > max_temp indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > max_temp indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > max_temp indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > max_temp indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > max_temp indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > max_temp indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > max_temp indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > max_temp indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > max_temp indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > max_temp indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of mean_temp .
+  * checking node cloud_cover for inclusion.
+    > mean_temp indep. cloud_cover given '  ' ( p-value: 0.8515827 ).
+  * checking node sunshine for inclusion.
+    > mean_temp indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > mean_temp indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > mean_temp indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > mean_temp indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > mean_temp indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > mean_temp indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > mean_temp indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > mean_temp indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > mean_temp indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > mean_temp indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > mean_temp indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > mean_temp indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > mean_temp indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > mean_temp indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > mean_temp indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > mean_temp indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > mean_temp indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > mean_temp indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > mean_temp indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > mean_temp indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > mean_temp indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of min_temp .
+  * checking node cloud_cover for inclusion.
+    > min_temp indep. cloud_cover given '  ' ( p-value: 0.9567874 ).
+  * checking node sunshine for inclusion.
+    > min_temp indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > min_temp indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > min_temp indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > min_temp indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > min_temp indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > min_temp indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > min_temp indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > min_temp indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > min_temp indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > min_temp indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > min_temp indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > min_temp indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > min_temp indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > min_temp indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > min_temp indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > min_temp indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > min_temp indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > min_temp indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > min_temp indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > min_temp indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > min_temp indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of precipitation .
+  * checking node cloud_cover for inclusion.
+    > precipitation indep. cloud_cover given '  ' ( p-value: 0.3002543 ).
+  * checking node sunshine for inclusion.
+    > precipitation indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > precipitation indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > precipitation indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > precipitation indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > precipitation indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > precipitation indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > precipitation indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > precipitation indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > precipitation indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > precipitation indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > precipitation indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > precipitation indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > precipitation indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > precipitation indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > precipitation indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > precipitation indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > precipitation indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > precipitation indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > precipitation indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > precipitation indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > precipitation indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of pressure .
+  * checking node cloud_cover for inclusion.
+    > pressure indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > pressure indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > pressure indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > pressure indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > pressure indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > pressure indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > pressure indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > pressure indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > pressure indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > pressure indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > pressure indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > pressure indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > pressure indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > pressure indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > pressure indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > pressure indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > pressure indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > pressure indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > pressure indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > pressure indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > pressure indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > pressure indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of snow_depth .
+  * checking node cloud_cover for inclusion.
+    > snow_depth indep. cloud_cover given '  ' ( p-value: 0.9369991 ).
+  * checking node sunshine for inclusion.
+    > snow_depth indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > snow_depth indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > snow_depth indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > snow_depth indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > snow_depth indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > snow_depth indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > snow_depth indep. pressure given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > snow_depth indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > snow_depth indep. CO given '  ' ( p-value: 0.9999992 ).
+  * checking node NO for inclusion.
+    > snow_depth indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > snow_depth indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > snow_depth indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > snow_depth indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > snow_depth indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > snow_depth indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > snow_depth indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > snow_depth indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > snow_depth indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > snow_depth indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > snow_depth indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > snow_depth indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of Number of Bicycle Hires .
+  * checking node cloud_cover for inclusion.
+    > Number of Bicycle Hires indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > Number of Bicycle Hires indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > Number of Bicycle Hires indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > Number of Bicycle Hires indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > Number of Bicycle Hires indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > Number of Bicycle Hires indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > Number of Bicycle Hires indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > Number of Bicycle Hires indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > Number of Bicycle Hires indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > Number of Bicycle Hires indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > Number of Bicycle Hires indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > Number of Bicycle Hires indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > Number of Bicycle Hires indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > Number of Bicycle Hires indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > Number of Bicycle Hires indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > Number of Bicycle Hires indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of CO .
+  * checking node cloud_cover for inclusion.
+    > CO indep. cloud_cover given '  ' ( p-value: 0.7314529 ).
+  * checking node sunshine for inclusion.
+    > CO indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > CO indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > CO indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > CO indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > CO indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > CO indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > CO indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > CO indep. snow_depth given '  ' ( p-value: 0.9999992 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > CO indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > CO indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > CO indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > CO indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > CO indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > node SO2 included in the markov blanket ( p-value: 7.784301e-05 ).
+    > markov blanket ( 1 nodes ) now is ' SO2 '.
+    > restarting grow loop.
+  * checking node cloud_cover for inclusion.
+    > CO indep. cloud_cover given ' SO2 ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > CO indep. sunshine given ' SO2 ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > CO indep. global_radiation given ' SO2 ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > CO indep. max_temp given ' SO2 ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > CO indep. mean_temp given ' SO2 ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > CO indep. min_temp given ' SO2 ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > CO indep. precipitation given ' SO2 ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > CO indep. pressure given ' SO2 ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > CO indep. snow_depth given ' SO2 ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > CO indep. Number of Bicycle Hires given ' SO2 ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > CO indep. NO given ' SO2 ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > CO indep. NO2 given ' SO2 ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > CO indep. O3 given ' SO2 ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > CO indep. PM10 given ' SO2 ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > CO indep. Bus journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > CO indep. Underground journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > CO indep. DLR Journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > CO indep. Tram Journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > CO indep. Overground Journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > CO indep. London Cable Car Journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > CO indep. TfL Rail Journeys (m) given ' SO2 ' ( p-value: 1 ).
+  * checking node SO2 for exclusion (shrinking phase).
+    > node SO2 remains in the markov blanket. ( p-value: 7.784301e-05 )
+----------------------------------------------------------------
+* learning the markov blanket of NO .
+  * checking node cloud_cover for inclusion.
+    > NO indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > NO indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > NO indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > NO indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > NO indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > NO indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > NO indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > NO indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > NO indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > NO indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > NO indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > NO indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > NO indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > NO indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > NO indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > NO indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > NO indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > NO indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > NO indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > NO indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > NO indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > NO indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of NO2 .
+  * checking node cloud_cover for inclusion.
+    > NO2 indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > NO2 indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > NO2 indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > NO2 indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > NO2 indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > NO2 indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > NO2 indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > NO2 indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > NO2 indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > NO2 indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > NO2 indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > NO2 indep. NO given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > NO2 indep. O3 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > NO2 indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > NO2 indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > NO2 indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > NO2 indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > NO2 indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > NO2 indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > NO2 indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > NO2 indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > NO2 indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of O3 .
+  * checking node cloud_cover for inclusion.
+    > O3 indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > O3 indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > O3 indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > O3 indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > O3 indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > O3 indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > O3 indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > O3 indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > O3 indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > O3 indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > O3 indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > O3 indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > O3 indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > O3 indep. PM10 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > O3 indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > O3 indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > O3 indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > O3 indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > O3 indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > O3 indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > O3 indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > O3 indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of PM10 .
+  * checking node cloud_cover for inclusion.
+    > PM10 indep. cloud_cover given '  ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > PM10 indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > PM10 indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > PM10 indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > PM10 indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > PM10 indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > PM10 indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > PM10 indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > PM10 indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > PM10 indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > PM10 indep. CO given '  ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > PM10 indep. NO given '  ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > PM10 indep. NO2 given '  ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > PM10 indep. O3 given '  ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > PM10 indep. SO2 given '  ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > PM10 indep. Bus journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > PM10 indep. Underground journeys (m) given '  ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > PM10 indep. DLR Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > PM10 indep. Tram Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > PM10 indep. Overground Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > PM10 indep. London Cable Car Journeys (m) given '  ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > PM10 indep. TfL Rail Journeys (m) given '  ' ( p-value: 1 ).
+----------------------------------------------------------------
+* learning the markov blanket of SO2 .
+  * checking node cloud_cover for inclusion.
+    > SO2 indep. cloud_cover given '  ' ( p-value: 0.7861926 ).
+  * checking node sunshine for inclusion.
+    > SO2 indep. sunshine given '  ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > SO2 indep. global_radiation given '  ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > SO2 indep. max_temp given '  ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > SO2 indep. mean_temp given '  ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > SO2 indep. min_temp given '  ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > SO2 indep. precipitation given '  ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > SO2 indep. pressure given '  ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > SO2 indep. snow_depth given '  ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > SO2 indep. Number of Bicycle Hires given '  ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > node CO included in the markov blanket ( p-value: 7.784301e-05 ).
+    > markov blanket ( 1 nodes ) now is ' CO '.
+    > restarting grow loop.
+  * checking node cloud_cover for inclusion.
+    > SO2 indep. cloud_cover given ' CO ' ( p-value: 1 ).
+  * checking node sunshine for inclusion.
+    > SO2 indep. sunshine given ' CO ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > SO2 indep. global_radiation given ' CO ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > SO2 indep. max_temp given ' CO ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > SO2 indep. mean_temp given ' CO ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > SO2 indep. min_temp given ' CO ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > SO2 indep. precipitation given ' CO ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > SO2 indep. pressure given ' CO ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > SO2 indep. snow_depth given ' CO ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > SO2 indep. Number of Bicycle Hires given ' CO ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > SO2 indep. NO given ' CO ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > SO2 indep. NO2 given ' CO ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > SO2 indep. O3 given ' CO ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > SO2 indep. PM10 given ' CO ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > SO2 indep. Bus journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > SO2 indep. Underground journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > SO2 indep. DLR Journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > SO2 indep. Tram Journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > SO2 indep. Overground Journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > SO2 indep. London Cable Car Journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > SO2 indep. TfL Rail Journeys (m) given ' CO ' ( p-value: 1 ).
+  * checking node CO for exclusion (shrinking phase).
+    > node CO remains in the markov blanket. ( p-value: 7.784301e-05 )
+----------------------------------------------------------------
+* learning the markov blanket of Bus journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 7.245589e-27 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > Bus journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > Bus journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > Bus journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > Bus journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > Bus journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > Bus journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > Bus journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > Bus journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > Bus journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > Bus journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > Bus journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > Bus journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > Bus journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > Bus journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > Bus journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > Bus journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > Bus journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > Bus journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > Bus journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > Bus journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > Bus journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 7.245589e-27 )
+----------------------------------------------------------------
+* learning the markov blanket of Underground journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 7.245589e-27 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > Underground journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > Underground journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > Underground journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > Underground journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > Underground journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > Underground journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > Underground journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > Underground journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > Underground journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > Underground journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > Underground journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > Underground journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > Underground journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > Underground journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > Underground journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > Underground journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > Underground journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > Underground journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > Underground journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > Underground journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > Underground journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 7.245589e-27 )
+----------------------------------------------------------------
+* learning the markov blanket of DLR Journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 2.728196e-27 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > DLR Journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > DLR Journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > DLR Journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > DLR Journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > DLR Journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > DLR Journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > DLR Journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > DLR Journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > DLR Journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > DLR Journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > DLR Journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > DLR Journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > DLR Journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > DLR Journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > DLR Journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > DLR Journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > DLR Journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > DLR Journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > DLR Journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > DLR Journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > DLR Journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 2.728196e-27 )
+----------------------------------------------------------------
+* learning the markov blanket of Tram Journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 7.245589e-27 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > Tram Journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > Tram Journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > Tram Journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > Tram Journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > Tram Journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > Tram Journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > Tram Journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > Tram Journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > Tram Journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > Tram Journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > Tram Journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > Tram Journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > Tram Journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > Tram Journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > Tram Journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > Tram Journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > Tram Journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > Tram Journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > Tram Journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > Tram Journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > Tram Journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 7.245589e-27 )
+----------------------------------------------------------------
+* learning the markov blanket of Overground Journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 3.586214e-27 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > Overground Journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > Overground Journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > Overground Journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > Overground Journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > Overground Journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > Overground Journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > Overground Journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > Overground Journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > Overground Journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > Overground Journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > Overground Journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > Overground Journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > Overground Journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > Overground Journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > Overground Journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > Overground Journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > Overground Journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > Overground Journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > Overground Journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > Overground Journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > Overground Journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 3.586214e-27 )
+----------------------------------------------------------------
+* learning the markov blanket of London Cable Car Journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 1.940358e-20 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > London Cable Car Journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > London Cable Car Journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > London Cable Car Journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > London Cable Car Journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > London Cable Car Journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > London Cable Car Journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > London Cable Car Journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > London Cable Car Journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > London Cable Car Journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > London Cable Car Journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > London Cable Car Journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > London Cable Car Journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > London Cable Car Journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > London Cable Car Journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > London Cable Car Journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node TfL Rail Journeys (m) for inclusion.
+    > London Cable Car Journeys (m) indep. TfL Rail Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 1.940358e-20 )
+----------------------------------------------------------------
+* learning the markov blanket of TfL Rail Journeys (m) .
+  * checking node cloud_cover for inclusion.
+    > node cloud_cover included in the markov blanket ( p-value: 1.165116e-09 ).
+    > markov blanket ( 1 nodes ) now is ' cloud_cover '.
+    > restarting grow loop.
+  * checking node sunshine for inclusion.
+    > TfL Rail Journeys (m) indep. sunshine given ' cloud_cover ' ( p-value: 1 ).
+  * checking node global_radiation for inclusion.
+    > TfL Rail Journeys (m) indep. global_radiation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node max_temp for inclusion.
+    > TfL Rail Journeys (m) indep. max_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node mean_temp for inclusion.
+    > TfL Rail Journeys (m) indep. mean_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node min_temp for inclusion.
+    > TfL Rail Journeys (m) indep. min_temp given ' cloud_cover ' ( p-value: 1 ).
+  * checking node precipitation for inclusion.
+    > TfL Rail Journeys (m) indep. precipitation given ' cloud_cover ' ( p-value: 1 ).
+  * checking node pressure for inclusion.
+    > TfL Rail Journeys (m) indep. pressure given ' cloud_cover ' ( p-value: 1 ).
+  * checking node snow_depth for inclusion.
+    > TfL Rail Journeys (m) indep. snow_depth given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Number of Bicycle Hires for inclusion.
+    > TfL Rail Journeys (m) indep. Number of Bicycle Hires given ' cloud_cover ' ( p-value: 1 ).
+  * checking node CO for inclusion.
+    > TfL Rail Journeys (m) indep. CO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO for inclusion.
+    > TfL Rail Journeys (m) indep. NO given ' cloud_cover ' ( p-value: 1 ).
+  * checking node NO2 for inclusion.
+    > TfL Rail Journeys (m) indep. NO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node O3 for inclusion.
+    > TfL Rail Journeys (m) indep. O3 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node PM10 for inclusion.
+    > TfL Rail Journeys (m) indep. PM10 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node SO2 for inclusion.
+    > TfL Rail Journeys (m) indep. SO2 given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Bus journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. Bus journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Underground journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. Underground journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node DLR Journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. DLR Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Tram Journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. Tram Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node Overground Journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. Overground Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node London Cable Car Journeys (m) for inclusion.
+    > TfL Rail Journeys (m) indep. London Cable Car Journeys (m) given ' cloud_cover ' ( p-value: 1 ).
+  * checking node cloud_cover for exclusion (shrinking phase).
+    > node cloud_cover remains in the markov blanket. ( p-value: 1.165116e-09 )
+----------------------------------------------------------------
+* checking consistency of markov blankets.
+  > checking node cloud_cover.
+  > checking node sunshine.
+  > checking node global_radiation.
+  > checking node max_temp.
+  > checking node mean_temp.
+  > checking node min_temp.
+  > checking node precipitation.
+  > checking node pressure.
+  > checking node snow_depth.
+  > checking node Number of Bicycle Hires.
+  > checking node CO.
+  > checking node NO.
+  > checking node NO2.
+  > checking node O3.
+  > checking node PM10.
+  > checking node SO2.
+  > checking node Bus journeys (m).
+  > checking node Underground journeys (m).
+  > checking node DLR Journeys (m).
+  > checking node Tram Journeys (m).
+  > checking node Overground Journeys (m).
+  > checking node London Cable Car Journeys (m).
+  > checking node TfL Rail Journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and global_radiation.
+@ asymmetry in the markov blankets for cloud_cover and Bus journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and Underground journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and DLR Journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and Tram Journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and Overground Journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and London Cable Car Journeys (m).
+@ asymmetry in the markov blankets for cloud_cover and TfL Rail Journeys (m).
+----------------------------------------------------------------
+* learning neighbourhood of cloud_cover .
+  * blacklisted nodes: '  '
+  * whitelisted nodes: '  '
+  * starting with neighbourhood: ' sunshine '
+----------------------------------------------------------------
+* learning neighbourhood of sunshine .
+  * blacklisted nodes: '  '
+  * whitelisted nodes: '  '
+  * starting with neighbourhood: ' cloud_cover '
+----------------------------------------------------------------
+* markov blanket of global_radiation is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of max_temp is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of mean_temp is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of min_temp is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of precipitation is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of pressure is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of snow_depth is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of Number of Bicycle Hires is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* learning neighbourhood of CO .
+  * blacklisted nodes: '  '
+  * whitelisted nodes: '  '
+  * starting with neighbourhood: ' SO2 '
+----------------------------------------------------------------
+* markov blanket of NO is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of NO2 is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of O3 is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of PM10 is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* learning neighbourhood of SO2 .
+  * blacklisted nodes: '  '
+  * whitelisted nodes: '  '
+  * starting with neighbourhood: ' CO '
+----------------------------------------------------------------
+* markov blanket of Bus journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of Underground journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of DLR Journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of Tram Journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of Overground Journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of London Cable Car Journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* markov blanket of TfL Rail Journeys (m) is empty; the neighbourhood as well.
+----------------------------------------------------------------
+* checking consistency of neighbourhood sets.
+  > checking node cloud_cover.
+  > checking node sunshine.
+  > checking node global_radiation.
+  > checking node max_temp.
+  > checking node mean_temp.
+  > checking node min_temp.
+  > checking node precipitation.
+  > checking node pressure.
+  > checking node snow_depth.
+  > checking node Number of Bicycle Hires.
+  > checking node CO.
+  > checking node NO.
+  > checking node NO2.
+  > checking node O3.
+  > checking node PM10.
+  > checking node SO2.
+  > checking node Bus journeys (m).
+  > checking node Underground journeys (m).
+  > checking node DLR Journeys (m).
+  > checking node Tram Journeys (m).
+  > checking node Overground Journeys (m).
+  > checking node London Cable Car Journeys (m).
+  > checking node TfL Rail Journeys (m).
+----------------------------------------------------------------
+* v-structures centered on cloud_cover .
+----------------------------------------------------------------
+* v-structures centered on sunshine .
+----------------------------------------------------------------
+* v-structures centered on global_radiation .
+----------------------------------------------------------------
+* v-structures centered on max_temp .
+----------------------------------------------------------------
+* v-structures centered on mean_temp .
+----------------------------------------------------------------
+* v-structures centered on min_temp .
+----------------------------------------------------------------
+* v-structures centered on precipitation .
+----------------------------------------------------------------
+* v-structures centered on pressure .
+----------------------------------------------------------------
+* v-structures centered on snow_depth .
+----------------------------------------------------------------
+* v-structures centered on Number of Bicycle Hires .
+----------------------------------------------------------------
+* v-structures centered on CO .
+----------------------------------------------------------------
+* v-structures centered on NO .
+----------------------------------------------------------------
+* v-structures centered on NO2 .
+----------------------------------------------------------------
+* v-structures centered on O3 .
+----------------------------------------------------------------
+* v-structures centered on PM10 .
+----------------------------------------------------------------
+* v-structures centered on SO2 .
+----------------------------------------------------------------
+* v-structures centered on Bus journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on Underground journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on DLR Journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on Tram Journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on Overground Journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on London Cable Car Journeys (m) .
+----------------------------------------------------------------
+* v-structures centered on TfL Rail Journeys (m) .
+* scanning the graph (step 1).
+* setting the directions of all directed arcs (step 1c).
+* setting the directions determined by whitelist and blacklist (step 1c).
+* marking v-structures (step 2).
+* removing moral v-structures aka shielded colliders.
+* setting the direction of more arcs (step 3, iteration 0).
+  > the graph is unchanged, stopping.
