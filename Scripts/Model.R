@@ -55,14 +55,14 @@ library(arules)
 
 
 
-categories.BH <- discretize(validation.set$`Number of Bicycle Hires`, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.BH <- discretize(validation.set$`Number of Bicycle Hires`, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "Number of Bicycle Hires", data = validation.set, method = "exact")
 #predicting bike hires
 head(pred)
 head(validation.set$`Number of Bicycle Hires`)
 cor(validation.set$`Number of Bicycle Hires`, pred, use = "complete.obs")
 
-predicted.BH <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.BH <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.BH)
 head(predicted.BH)
 cmatrix.BH <- confusionMatrix(data=predicted.BH, reference = categories.BH)
@@ -70,70 +70,70 @@ cmatrix.BH
 
 
 #Bus journeys
-categories.BUS <- discretize(validation.set$`Bus journeys (m)`, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.BUS <- discretize(validation.set$`Bus journeys (m)`, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "Bus journeys (m)", data = validation.set, method = "exact")
 head(pred)
 head(validation.set$`Bus journeys (m)`)
 cor(validation.set$`Bus journeys (m)`, pred, use = "complete.obs")
 
-predicted.BUS <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.BUS <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.BUS)
 head(predicted.BUS)
 cmatrix.BUS <- confusionMatrix(data=predicted.BUS, reference = categories.BUS)
 cmatrix.BUS
 
 #Underground journeys
-categories.UG <- discretize(validation.set$`Underground journeys (m)`, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.UG <- discretize(validation.set$`Underground journeys (m)`, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "Underground journeys (m)", data = validation.set, method = "exact")
 head(pred)
 head(validation.set$`Underground journeys (m)`)
 cor(validation.set$`Underground journeys (m)`, pred, use = "complete.obs")
 
-predicted.UG <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.UG <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.UG)
 head(predicted.UG)
 cmatrix.UG <- confusionMatrix(data=predicted.UG, reference = categories.UG)
 cmatrix.UG
 
 #Overground journeys
-categories.OG <- discretize(validation.set$`Overground Journeys (m)`, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.OG <- discretize(validation.set$`Overground Journeys (m)`, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "Overground Journeys (m)", data = validation.set, method = "exact")
 head(pred)
 head(validation.set$`Overground Journeys (m)`)
 cor(validation.set$`Overground Journeys (m)`, pred, use = "complete.obs")
 
-predicted.OG <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.OG <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.OG)
 head(predicted.OG)
 cmatrix.OG <- confusionMatrix(data=predicted.OG, reference = categories.OG)
 cmatrix.OG
 
 #CO - pollution element
-categories.CO <- discretize(validation.set$CO, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.CO <- discretize(validation.set$CO, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "CO", data = validation.set, method = "exact")
 head(pred)
 head(validation.set$CO)
 cor(validation.set$CO, pred, use = "complete.obs")
 
-predicted.CO <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.CO <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.CO)
 head(predicted.CO)
 cmatrix.CO <- confusionMatrix(data=predicted.CO, reference = categories.CO)
 cmatrix.CO
 
-categories.PM <- discretize(validation.set$PM10, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+categories.PM <- discretize(validation.set$PM10, breaks = 3, labels = c("Low","Medium","High"))
 pred = predict(dfitted, node = "PM10", data = validation.set, method = "exact")
 head(pred)
 head(validation.set$PM10)
 cor(validation.set$PM10, pred, use = "complete.obs")
 
-predicted.PM <- discretize(pred, breaks = 4, labels = c("Low","Medium-Low","Medium-High","High"))
+predicted.PM <- discretize(pred, breaks = 3, labels = c("Low","Medium","High"))
 head(categories.PM)
 head(predicted.PM)
 cmatrix.PM <- confusionMatrix(data=predicted.PM, reference = categories.PM)
 cmatrix.PM
 
-sink(file = "General/New folder (3)/Material/YEAR 3/New Approach/Scripts/Confusion-Matrix.txt")
+sink(file = "General/New folder (3)/Material/YEAR 3/New Approach/Scripts/Confusion-Matrix1.txt")
 print("Bicycle Hire")
 cmatrix.BH
 print("Bus Journeys")
