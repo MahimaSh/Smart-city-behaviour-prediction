@@ -1,9 +1,9 @@
 
 library(shiny)
-
+library(bnlearn)
 cd <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Datasets/CompleteData.csv")
 #Actual <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Smart-City-Project/RealValues.csv")
-
+library(corrplot)
 library(dplyr)
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -26,54 +26,45 @@ ui <- fluidPage(
                         "PM10"),
             selected = "Number.of.Bicycle.Hires"
           ),
-          sliderInput(
+          numericInput(
             inputId = "cloud",
-            label = "Choose Cloud Cover Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Cloud Cover Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
             inputId = "sun",
-            label = "Choose Sunshine Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Sunshine Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
+            inputId = "meantemp",
+            label = "Enter Mean Temperature Value",
+            value = 5
+          ),
+          numericInput(
             inputId = "pressure",
-            label = "Choose Pressure Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Pressure Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
             inputId = "bicycle",
-            label = "Choose Bicycle usage Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Bicycle usage Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
             inputId = "bus",
-            label = "Choose Bus Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Bus usage Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
             inputId = "tram",
-            label = "Choose Tram Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Tram usage Value",
+            value = 5
           ),
-          sliderInput(
+          numericInput(
             inputId = "og",
-            label = "Choose Overground Value",
-            min = 0,
-            max = 1,
-            value = 0.5
+            label = "Enter Overground usage Value",
+            value = 5
           ),
           actionButton(
             inputId = "action",
@@ -105,6 +96,7 @@ server <- function(input, output, session) {
     evlist = list(
       cloud_cover = input$cloud,
       sunshine = input$sun,
+      mean_temp = input$meantemp,
       pressure = input$pressure,
       Number.of.Bicycle.Hires = input$bicycle,
       Bus.journeys..m. = input$bus,
@@ -112,13 +104,13 @@ server <- function(input, output, session) {
       Overground.Journeys..m. = input$og
     ) 
     if(input$event == "Number.of.Bicycle.Hires"){
-      evlist = evlist[-4]
-    } else if(input$event == "Bus.journeys..m."){
       evlist = evlist[-5]
-    } else if(input$event == "Overground.Journeys..m."){
-      evlist = evlist[-7]
-    } else if(input$event == "Tram.Journeys..m."){
+    } else if(input$event == "Bus.journeys..m."){
       evlist = evlist[-6]
+    } else if(input$event == "Overground.Journeys..m."){
+      evlist = evlist[-8]
+    } else if(input$event == "Tram.Journeys..m."){
+      evlist = evlist[-7]
     }else{
       evlist = evlist
     }
@@ -129,7 +121,7 @@ server <- function(input, output, session) {
   
   
   corplot <- eventReactive(input$corplot,{
-    ylist <- select(cd,"cloud_cover", "sunshine", "pressure", "Number.of.Bicycle.Hires", 
+    ylist <- select(cd,"cloud_cover", "sunshine", "mean_temp", "pressure", "Number.of.Bicycle.Hires", 
                    "Bus.journeys..m.", "Tram.Journeys..m.", "Overground.Journeys..m.")
     graph <- cor(x = cd[input$event], y = ylist, use = "complete.obs")
     corrplot(graph, method = "circle", addgrid.col = T,type = 'upper', addCoef.col = T, number.cex = .7, diag = T , tl.cex = .9)
