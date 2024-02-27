@@ -19,7 +19,7 @@ ui <- fluidPage(
             label = "Select target variable",
             choices = c("Number.of.Bicycle.Hires",
                         "Bus.journeys..m.",
-                        "Overground.Journeys..m.",
+                        "Underground.journeys..m.",
                         "Tram.Journeys..m.",
                         "CO", 
                         "O3",
@@ -39,11 +39,6 @@ ui <- fluidPage(
           numericInput(
             inputId = "meantemp",
             label = "Enter Mean Temperature Value",
-            value = 5
-          ),
-          numericInput(
-            inputId = "pressure",
-            label = "Enter Pressure Value",
             value = 5
           ),
           numericInput(
@@ -97,31 +92,30 @@ server <- function(input, output, session) {
       cloud_cover = input$cloud,
       sunshine = input$sun,
       mean_temp = input$meantemp,
-      pressure = input$pressure,
       Number.of.Bicycle.Hires = input$bicycle,
       Bus.journeys..m. = input$bus,
       Tram.Journeys..m. = input$tram,
       Overground.Journeys..m. = input$og
     ) 
     if(input$event == "Number.of.Bicycle.Hires"){
-      evlist = evlist[-5]
+      evlist = evlist[-4]
     } else if(input$event == "Bus.journeys..m."){
-      evlist = evlist[-6]
+      evlist = evlist[-5]
     } else if(input$event == "Overground.Journeys..m."){
-      evlist = evlist[-8]
-    } else if(input$event == "Tram.Journeys..m."){
       evlist = evlist[-7]
+    } else if(input$event == "Tram.Journeys..m."){
+      evlist = evlist[-6]
     }else{
       evlist = evlist
     }
 
     sample <- cpdist(fitted, nodes = input$event, evlist, method = "lw", debug = TRUE, n=100)
-    expected_output <- sum(unlist(sample) * attr(sample, "weights")) / sum(attr(sample, "weights"))
+    expected_output <- (sum(unlist(sample) * attr(sample, "weights")))/ sum(attr(sample, "weights"))
   })
   
   
   corplot <- eventReactive(input$corplot,{
-    ylist <- select(cd,"cloud_cover", "sunshine", "mean_temp", "pressure", "Number.of.Bicycle.Hires", 
+    ylist <- select(cd,"cloud_cover", "sunshine", "mean_temp", "Number.of.Bicycle.Hires", 
                    "Bus.journeys..m.", "Tram.Journeys..m.", "Overground.Journeys..m.")
     graph <- cor(x = cd[input$event], y = ylist, use = "complete.obs")
     corrplot(graph, method = "circle", addgrid.col = T,type = 'upper', addCoef.col = T, number.cex = .7, diag = T , tl.cex = .9)
