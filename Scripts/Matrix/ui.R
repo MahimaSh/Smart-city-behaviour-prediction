@@ -8,15 +8,12 @@ library(ggplot2)
 Actual <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Smart-City-Project/RealValues.csv")
 Predictions <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Smart-City-Project/Predictions.csv")
 
-# Load data
-
-
 
 # Define UI
 
 ui <- fluidPage(
   
-  titlePanel("Smart-City"),
+  titlePanel("Smart City Behaviour Prediction"),
   
 
   sidebarLayout(
