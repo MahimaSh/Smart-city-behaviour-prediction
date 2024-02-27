@@ -1,0 +1,12 @@
+[1] "Bicycle Hire"
+[1] -0.02262054
+[1] "Bus Journeys"
+[1] 0.3298998
+[1] "Underground Journeys"
+[1] 0.1548867
+[1] "Overground Journeys"
+[1] -0.2364689
+[1] "CO - Pollution"
+[1] 0.8106379
+[1] "PM10 - Pollution"
+[1] 0.7417527
