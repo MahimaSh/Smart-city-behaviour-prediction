@@ -7,6 +7,7 @@ library(caTools)
 library(arules)
 library(parallel)
 library(caret)
+
 # normalizing data
 data <- preProcess(as.data.frame(mydata), method=c("range"))
 
@@ -19,33 +20,37 @@ dag = structural.em(newdata)
 dag
 plot(dag)
 names(dag)
-info = structural.em(newdata, return.all = TRUE, maximize = "tabu", maximize.args = list(tabu = 50, max.tabu = 50), fit = "mle-g", fit.args = list(iss = 1), impute = "exact", max.iter = 3)
+
+
+info = structural.em(newdata, return.all = TRUE, maximize = "tabu", maximize.args = list(tabu = 50, 
+                  max.tabu = 50), fit = "mle-g", fit.args = list(iss = 1), impute = "exact", max.iter = 3)
 names(info)
 info$dag
 head(info$imputed)
 info$fitted
 
+#creating bnfit object from network build from missing data
 dfitted = bn.fit(dag, newdata)
-
 data2 = impute(dfitted, data = data2, cluster = cl)
 head(data2)
 
 data.final=data2[sample(3817,3817),] 
 training.set = data.final[1:3100, ]
-validation.set = data.final[3101:3817, ]
+testing.set = data.final[3101:3817, ]
+
+#learning the network structure of the data
+dag1 = hc(data.final)
+plot(dag1)
+fitted = bn.fit(dag1, training.set)
 
 
-dag = hc(data.final)
-plot(dag)
-fitted = bn.fit(dag, training.set)
-
-
-categories.BH <- discretize(validation.set$Number.of.Bicycle.Hires, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "Number.of.Bicycle.Hires", data = validation.set, method = "exact")
+categories.BH <- discretize(testing.set$Number.of.Bicycle.Hires, method = "interval", breaks = 3, 
+                            labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "Number.of.Bicycle.Hires", data = testing.set, method = "exact")
 #predicting bike hires
 head(pred)
-head(validation.set$Number.of.Bicycle.Hires)
-cor(validation.set$Number.of.Bicycle.Hires, pred, use = "complete.obs")
+head(testing.set$Number.of.Bicycle.Hires)
+cor(testing.set$Number.of.Bicycle.Hires, pred, use = "complete.obs")
 
 predicted.BH <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.BH)
@@ -55,11 +60,11 @@ cmatrix.BH
 
 
 #Bus journeys
-categories.BUS <- discretize(validation.set$Bus.journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "Bus.journeys..m.", data = validation.set, method = "exact")
+categories.BUS <- discretize(testing.set$Bus.journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "Bus.journeys..m.", data = testing.set, method = "exact")
 head(pred)
-head(validation.set$Bus.journeys..m.)
-cor(validation.set$Bus.journeys..m., pred, use = "complete.obs")
+head(testing.set$Bus.journeys..m.)
+cor(testing.set$Bus.journeys..m., pred, use = "complete.obs")
 
 predicted.BUS <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.BUS)
@@ -68,11 +73,11 @@ cmatrix.BUS <- confusionMatrix(data=predicted.BUS, reference = categories.BUS)
 cmatrix.BUS
 
 #Underground journeys
-categories.UG <- discretize(validation.set$Underground.journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "Underground.journeys..m.", data = validation.set, method = "exact")
+categories.UG <- discretize(testing.set$Underground.journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "Underground.journeys..m.", data = testing.set, method = "exact")
 head(pred)
-head(validation.set$Underground.journeys..m.)
-cor(validation.set$Underground.journeys..m., pred, use = "complete.obs")
+head(testing.set$Underground.journeys..m.)
+cor(testing.set$Underground.journeys..m., pred, use = "complete.obs")
 
 predicted.UG <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.UG)
@@ -81,11 +86,11 @@ cmatrix.UG <- confusionMatrix(data=predicted.UG, reference = categories.UG)
 cmatrix.UG
 
 #Overground journeys
-categories.OG <- discretize(validation.set$Overground.Journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "Overground.Journeys..m.", data = validation.set, method = "exact")
+categories.OG <- discretize(testing.set$Overground.Journeys..m., method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "Overground.Journeys..m.", data = testing.set, method = "exact")
 head(pred)
-head(validation.set$Overground.Journeys..m.)
-cor(validation.set$Overground.Journeys..m., pred, use = "complete.obs")
+head(testing.set$Overground.Journeys..m.)
+cor(testing.set$Overground.Journeys..m., pred, use = "complete.obs")
 
 predicted.OG <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.OG)
@@ -94,11 +99,11 @@ cmatrix.OG <- confusionMatrix(data=predicted.OG, reference = categories.OG)
 cmatrix.OG
 
 #CO - pollution element
-categories.CO <- discretize(validation.set$CO, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "CO", data = validation.set, method = "exact")
+categories.CO <- discretize(testing.set$CO, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "CO", data = testing.set, method = "exact")
 head(pred)
-head(validation.set$CO)
-cor(validation.set$CO, pred, use = "complete.obs")
+head(testing.set$CO)
+cor(testing.set$CO, pred, use = "complete.obs")
 
 predicted.CO <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.CO)
@@ -107,18 +112,17 @@ cmatrix.CO <- confusionMatrix(data=predicted.CO, reference = categories.CO)
 cmatrix.CO
 
 #PM10 - pollution element
-categories.PM <- discretize(validation.set$PM10, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
-pred = predict(fitted, node = "PM10", data = validation.set, method = "exact")
+categories.PM <- discretize(testing.set$PM10, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+pred = predict(fitted, node = "PM10", data = testing.set, method = "exact")
 head(pred)
-head(validation.set$PM10)
-cor(validation.set$PM10, pred, use = "complete.obs")
+head(testing.set$PM10)
+cor(testing.set$PM10, pred, use = "complete.obs")
 
 predicted.PM <- discretize(pred, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
 head(categories.PM)
 head(predicted.PM)
 cmatrix.PM <- confusionMatrix(data=predicted.PM, reference = categories.PM)
 cmatrix.PM
-
 
 Actual.data <- data.frame(Number_of_Bicycle_Hires = categories.BH,
                           Bus_Journeys = categories.BUS,
@@ -151,14 +155,58 @@ cmatrix.PM
 sink()
 
 sink(file = "General/New folder (3)/Material/YEAR 3/New Approach/Scripts/Log-Likelihood.txt")
-log_likelihood <- logLik(dfitted, validation.set, by.sample = FALSE, na.rm = TRUE, debug = TRUE)
+log_likelihood <- logLik(dfitted, testing.set, by.sample = FALSE, na.rm = TRUE, debug = TRUE)
 sink()
 
 write.csv(data.final, "General/New folder (3)/Material/YEAR 3/New Approach/Datasets/CompleteData.csv", row.names=FALSE)
 
+#k-fold cross validation
+set.seed(123)  # Set seed for reproducibility
+folds <- createFolds(data.final$PM10, k = 10, list = TRUE)
+accuracies <- c()
+precisions <- c()
+recalls <- c()
+f1_scores <- c()
+
+for (fold in seq_along(folds)) {
+  train_index <- unlist(folds[-fold])
+  test_index <- unlist(folds[fold])
+  
+  bn_fit <- bn.fit(dag1, data = data.final[train_index, ])
+  predicted_values <- predict(bn_fit, node = "PM10", data = data.final[test_index, ], method = "exact")
+  true_values <- data.final$PM10[test_index]
+  
+  true <- discretize(true_values, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+  predicted <- discretize(predicted_values, method = "interval", breaks = 3, labels = c("A.Low","B.Medium","C.High"))
+  
+  # Calculate evaluation metrics
+  accuracy <- mean(predicted == true)
+  matrix <- confusionMatrix(data = predicted, reference = true)
+  precision <- matrix$byClass[5]
+  recall <- matrix$byClass[6]
+  f1 <- matrix$byClass[7]
+  
+  # Store evaluation metrics
+  accuracies <- c(accuracies, accuracy)
+  precisions <- c(precisions, precision)
+  recalls <- c(recalls, recall)
+  f1_scores <- c(f1_scores, f1)
+}
+# Calculate average evaluation metrics
+avg_accuracy <- mean(accuracies)
+avg_precision <- mean(precisions)
+avg_recall <- mean(recalls)
+avg_f1 <- mean(f1_scores)
+
+print(paste("Average Accuracy:", avg_accuracy))
+print(paste("Average Precision:", avg_precision))
+print(paste("Average Recall:", avg_recall))
+print(paste("Average F1 Score:", avg_f1))
+
+
 
 #query
-evidence.data <- validation.set[, names(fitted)]
+evidence.data <- testing.set[, names(fitted)]
 #eventlist <- validation.set[ ,11]
 results <- numeric(nrow(evidence.data))
 
@@ -181,10 +229,8 @@ colnames(rd) <- c('cloud_cover', 'sunshine', 'mean_temp', 'pressure', 'Number.of
 
 validation <- data.final[3801:3817, ]
 
-evidence.data <- validation
-#eventlist <- validation.set[ ,11]
-#results <- numeric(nrow(evidence.data))
-eventlist = evidence[ ,11]
+evidence.data <- testing.set
+eventlist = evidence.data[ ,11]
 test_list = list()
 expected_output <- numeric(nrow(evidence.data))
 
@@ -202,3 +248,7 @@ for(i in 1:nrow(evidence.data)){
   expected_output[i] <- sum(unlist(results) * attr(results, "weights")) / sum(attr(results, "weights"))
 }
 print(expected_output)
+
+
+#eventlist <- validation.set[ ,11]
+#results <- numeric(nrow(evidence.data))

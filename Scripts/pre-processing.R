@@ -68,12 +68,12 @@ TFL_new$`Period ending` <- as.Date(TFL_new$`Period ending`, '%d/%m/%Y')
 TFL_new = subset(TFL_new, TFL_new$`Period beginning` > as.Date('2010-07-24') & TFL_new$`Period ending` < as.Date('2021-01-10'))
 
 colnames(TFL_new)
-TFL_new <- TFL_new[-c(1,2,8,10)]
+
+TFL_new <- TFL_new[-c(1,2,3,4)]
 TFL_new <- rbind(TFL_new, TFL_new[rep(3817, 1), ])
 
 second_data<- cbind(second_data, TFL_new)
 colnames(second_data)
-second_data <- second_data[-c(18:21)]
 
 #exporting the dataset to csv file
 write.csv(second_data, "General/New folder (3)/Material/YEAR 3/New Approach/Datasets/DataFinal.csv", row.names=FALSE)
