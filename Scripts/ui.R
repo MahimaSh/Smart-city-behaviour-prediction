@@ -8,15 +8,22 @@ library(ggplot2)
 Actual <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Smart-City-Project/RealValues.csv")
 Predictions <- read.csv("~/General/New folder (3)/Material/YEAR 3/New Approach/Smart-City-Project/Predictions.csv")
 
+<<<<<<< Updated upstream
 # Load data
 
 
+=======
+>>>>>>> Stashed changes
 
 # Define UI
 
 ui <- fluidPage(
   
+<<<<<<< Updated upstream
   titlePanel("Smart-City"),
+=======
+  titlePanel("Smart City Behaviour Prediction"),
+>>>>>>> Stashed changes
   
 
   sidebarLayout(
@@ -37,6 +44,7 @@ ui <- fluidPage(
                     "PM10-Pollution"),
         selected = "Number of Bicycle Hire"
       )
+<<<<<<< Updated upstream
       #actionButton(
       #  inputId = "Correlation",
       #  label = "Show correlation graph of variables"
@@ -56,6 +64,19 @@ ui <- fluidPage(
     )
   )
 )
+=======
+      ),
+    
+
+    # Output: Show matrix
+    mainPanel(
+      verbatimTextOutput("Confusion_Matrix"),
+      
+    )
+)
+  )
+
+>>>>>>> Stashed changes
 
 # Define server
 
@@ -81,6 +102,7 @@ server <- function(input, output, session) {
            "PM10-Pollution" = Predictions$PM10_Pollution)
   })
 
+<<<<<<< Updated upstream
 
   output$Confusion_Matrix <- renderPrint({
     confusionMatrix(data = factor(Predicted.input()), reference = factor(Actual.input()))
@@ -95,8 +117,20 @@ server <- function(input, output, session) {
 #    corrplot(cortable, method = "circle")
 #    colnames(data.final) <- cbak
 #  })
+=======
+  
+  output$Confusion_Matrix <- renderPrint({
+    confusionMatrix(data = factor(Predicted.input()), reference = factor(Actual.input()))
+  })
+
+  
+>>>>>>> Stashed changes
 }
 
 # Create a Shiny app object
 
 shinyApp(ui = ui, server = server)
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
