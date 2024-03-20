@@ -68,6 +68,7 @@ TFL_new$`Period ending` <- as.Date(TFL_new$`Period ending`, '%d/%m/%Y')
 TFL_new = subset(TFL_new, TFL_new$`Period beginning` > as.Date('2010-07-24') & TFL_new$`Period ending` < as.Date('2021-01-10'))
 
 colnames(TFL_new)
+
 TFL_new <- TFL_new[-c(1,2,3,4)]
 TFL_new <- rbind(TFL_new, TFL_new[rep(3817, 1), ])
 
